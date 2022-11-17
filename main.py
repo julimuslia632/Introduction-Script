@@ -6,3 +6,5 @@ print("hello world!")
 print("Hello juli")
 print(calculate.x)
 print("hi again")
+
+print("bye bye")
