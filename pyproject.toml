@@ -12,6 +12,8 @@ Flask = "^2.2.0"
 urllib3 = "^1.26.12"
 pandas = "^1.5.1"
 latimes-calculate = "^0.3.1"
+DateTime = "^4.7"
+timedelta = "^2020.12.3"
 
 [tool.poetry.dev-dependencies]
 debugpy = "^1.6.2"

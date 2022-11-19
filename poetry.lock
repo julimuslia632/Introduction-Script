@@ -90,6 +90,18 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [[package]]
+name = "datetime"
+version = "4.7"
+description = "This package provides a DateTime data type, as known from Zope. Unless you need to communicate with Zope APIs, you're probably better off using Python's built-in datetime module."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+pytz = "*"
+"zope.interface" = "*"
+
+[[package]]
 name = "debugpy"
 version = "1.6.3"
 description = "An implementation of the Debug Adapter Protocol for Python"
@@ -431,6 +443,14 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 
 [[package]]
+name = "timedelta"
+version = "2020.12.3"
+description = "datetime.timedelta replacement"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "toml"
 version = "0.10.2"
 description = "Python Library for Tom's Obvious, Minimal Language"
@@ -529,10 +549,23 @@ python-versions = ">=3.7"
 docs = ["sphinx", "jaraco.packaging (>=9)", "rst.linker (>=1.9)", "jaraco.tidelift (>=1.4)"]
 testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.3)", "jaraco.itertools", "func-timeout", "pytest-black (>=0.3.7)", "pytest-mypy (>=0.9.1)"]
 
+[[package]]
+name = "zope.interface"
+version = "5.5.2"
+description = "Interfaces for Python"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+
+[package.extras]
+docs = ["sphinx", "repoze.sphinx.autointerface"]
+test = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
+testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
+
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8.0,<3.9"
-content-hash = "e8be14954b99bbbea75f39be5c07e98b6c36a495dfbd067d95204ea8d6e0b8e4"
+content-hash = "efad0a1ffba2c3ab5b0395e33d50a51b71de04e65efcbe3149844b269812f808"
 
 [metadata.files]
 aiohttp = []
@@ -543,6 +576,7 @@ certifi = []
 charset-normalizer = []
 click = []
 colorama = []
+datetime = []
 debugpy = []
 flask = []
 frozenlist = []
@@ -570,6 +604,7 @@ replit-python-lsp-server = []
 requests = []
 rope = []
 six = []
+timedelta = []
 toml = []
 tomli = []
 typing-extensions = []
@@ -580,3 +615,4 @@ whatthepatch = []
 yapf = []
 yarl = []
 zipp = []
+"zope.interface" = []
