@@ -14,6 +14,7 @@ pandas = "^1.5.1"
 latimes-calculate = "^0.3.1"
 DateTime = "^4.7"
 timedelta = "^2020.12.3"
+python-dateutil = "^2.8.2"
 
 [tool.poetry.dev-dependencies]
 debugpy = "^1.6.2"
